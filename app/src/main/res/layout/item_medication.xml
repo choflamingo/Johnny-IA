@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewMedicationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="3"
+            android:text="@string/medication_name"
+            android:textSize="18sp" />
+            
+        <TextView
+            android:id="@+id/textViewMedicationDosage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:text="@string/medication_dosage"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewMedicationTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:maxLines="3"
+            android:text="@string/time"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewMedicationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.75"
+            android:maxLines="3"
+            android:text="@string/date"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/buttonDeleteMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_alignParentEnd="true"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

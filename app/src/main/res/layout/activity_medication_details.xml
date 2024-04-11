@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Increase the minimum height for EditTexts -->
+        <EditText
+            android:id="@+id/editTextMedicationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/medication_name_hint"
+            android:importantForAccessibility="yes"
+            android:inputType="text"
+            android:autofillHints="name" /> <!-- Add autofill hints -->
+
+        <EditText
+            android:id="@+id/editTextDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/dosage_hint"
+            android:importantForAccessibility="yes"
+            android:inputType="text"
+            android:autofillHints="name" />
+            
+        <EditText
+            android:id="@+id/editTextFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/frequency_hint"
+            android:importantForAccessibility="yes" />
+
+        <Button
+            android:id="@+id/buttonPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date" />
+
+        <Button
+            android:id="@+id/buttonPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_time" />
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp" />
+        
+    <!-- Submit Button moved to bottom right -->
+    <Button
+        android:id="@+id/buttonSubmitMedication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
